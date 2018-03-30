@@ -19,6 +19,8 @@ $articles = $query->fetchAll();
 
 // debug($articles);
 
+
+
 ?>
 
 <?php include('include/headerfront.php'); ?>
