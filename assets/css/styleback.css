@@ -1,0 +1,309 @@
+/* couleur bleue : #00a99d */
+/* couleur orange : #f7931e */
+
+.clear:before,.clear:after {
+    content: '';
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* HEADER */
+
+.h5 {
+    background-color: #f7931e;
+    text-align: center;    
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.back {
+    font-size: 60px;    
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    font-weight: 300;    
+    text-transform: uppercase;  
+    font-size: 20px;
+    color: white;
+}
+
+a.menu {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all;
+}
+
+a.menu:hover {
+    background-color: #f1ab5b;
+}
+
+/* CONTENU PRINCIPAL */
+
+.main-content {
+    position: relative;
+    width: 800px;
+    margin: 50px auto;
+}
+
+/*
+ * DASHBOARD.PHP
+ */
+ 
+/* Aperçu des articles sur le dashboard */
+
+a.single {
+    float: left;    
+    width: 21%;
+    height: 150px;
+    position: relative;
+    background-color: white;    
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.2s;     
+}
+
+a.single:hover {
+    -webkit-box-shadow: 8px 8px 0px 0px grey;
+    -moz-box-shadow:    8px 8px 0px 0px grey;
+    box-shadow:         8px 8px 0px 0px grey;
+}
+
+.suppr1 {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.titre1 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 7px;
+    text-transform: none;
+}
+
+.aperc1 {
+    font-weight: 400;    
+    font-size: 15px;
+    margin-bottom: 7px;
+    text-transform: none;    
+}
+
+.date1 { 
+    color: grey;
+    font-size: 11px;
+    text-transform: none;
+    margin-bottom: 3px;    
+}
+
+.dateUpdate { 
+    color: rgb(180, 180, 180);
+    font-size: 11px;
+    text-transform: none;    
+}
+
+/*
+ * EDITPOST.PHP
+ */
+
+/* Formulaire de l'article à modifier */
+
+.form {
+    margin-top: 60px;
+}
+
+.suppr2 {
+    position: absolute;
+    right: 0;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 700;
+    color: lightgrey;
+}
+
+.hr {
+    border: 0.5px solid lightgrey;
+    margin-bottom: 20px;
+}
+
+/* Commentaires à modérer */
+
+.singleCom {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    position: relative;
+    background-color: white;    
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: all 0.2s;     
+}
+
+.singleCom:hover {
+    -webkit-box-shadow: 8px 8px 0px 0px grey;
+    -moz-box-shadow:    8px 8px 0px 0px grey;
+    box-shadow:         8px 8px 0px 0px grey;
+}
+
+.suppr3 {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.publi {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.apercCom {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 7px;
+    text-transform: none;    
+}
+
+.pseudoCom {
+    font-weight: 400;    
+    font-size: 15px;
+    margin-bottom: 7px;
+    text-transform: none;
+}
+
+.dateCom { 
+    color: grey;
+    font-size: 11px;
+    text-transform: none;
+    margin-bottom: 3px;    
+}
+
+/*
+ * NEWPOST.PHP
+ */
+
+.form {
+    margin-top: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+textarea {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 18px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 100%;
+    height: 180px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.titre {
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+
+.nom {
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+
+.article2 {
+    margin-top: 10px;    
+    margin-bottom: 10px;
+}
+
+select {
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-size: 14px;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 90px;
+}
+
+.submit {
+    background-color: lightgray;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: transparent;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.submit:hover {
+    background-color: gray;
+    color: white;
+}
+
+.error {
+    color: rgb(196, 194, 194);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+
+h6 {
+    color: white;
+    font-size: 10px;
+    background-color: #f7931e;    
+    text-align: end;
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
